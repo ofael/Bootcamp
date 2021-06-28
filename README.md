@@ -1,5 +1,5 @@
-## CalculadoraKotlin :calling:
+## Praticas BootCamp Santader :calling:
 
 
 
-- Fazendo uma calculadora básica kotlin, exercício bootcamp
+- Calculadora em Kotlin
