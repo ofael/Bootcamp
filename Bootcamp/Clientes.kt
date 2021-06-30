@@ -10,8 +10,3 @@ class Clientes {
 
     fun fullInfo() = "Nome: $name $lastName Cpf: $cpf"
 }
-
-fun main(){
-    val rafael = Clientes()
-    println(rafael.fullInfo())
-}
