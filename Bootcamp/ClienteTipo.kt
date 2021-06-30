@@ -1,6 +1,6 @@
 package digital.one.bank
 
-enum class ClienteTipo(Tipo:String) {
+enum class ClienteTipo(val Tipo:String) {
     Pf("Pessoa Fisíca"),
     Pj("Pessoa Jurídica");
 }
