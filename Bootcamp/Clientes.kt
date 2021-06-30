@@ -1,12 +1,16 @@
 package digital.one.bank
 
-class Clientes {
-    var name:String = "Rafael"
-    var lastName:String = "Fontes"
-    var cpf:String = "120.780.657-91"
-    private set
+class Clientes(
+    nome:String,
+    cpf:String,
+    val clienteTipo: String,
+    val senha:String
+) : Pessoas(nome ,cpf ), LoginOn {
+    override fun login(): Boolean = "123mudarofael" == senha
 
-    constructor()
-
-    fun fullInfo() = "Nome: $name $lastName Cpf: $cpf"
+    override fun toString(): String = """
+        Nome: $nome
+        CPF: $cpf
+        Tipo conta: $clienteTipo        
+    """.trimIndent()
 }
