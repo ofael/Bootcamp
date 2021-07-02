@@ -1,8 +1,8 @@
 package collections
 
 fun main(){
-    val rafael = Funcionarios(nome = "Rafael", salario = 1500.0)
-    val maria = Funcionarios(nome = "Maria", salario = 3500.0)
+    val rafael = Funcionarios(nome = "Rafael", salario = 3500.0)
+    val maria = Funcionarios(nome = "Maria", salario = 1500.0)
     val ghessica = Funcionarios(nome = "Ghessica", salario = 4500.0)
 
     val funcionarios = listOf(rafael,maria,ghessica)
@@ -11,8 +11,11 @@ fun main(){
         println(it)
     }
     println("~~~~~~~~~~")
-
     println(funcionarios.find { it.nome == "Maria" })
+    println("~~~~~~~~~~")
+         funcionarios
+        .sortedBy { it.salario }
+        .forEach{println(it)}
 }
 
 data class Funcionarios(
